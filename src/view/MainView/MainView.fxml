@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ViewController.MainViewController">
+   <children>
+       <StackPane fx:id="stackPane" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" ></StackPane>
+      <TabPane fx:id="tabsTabPane" prefHeight="500.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Get Images">
+               <content>
+                  <fx:include fx:id="SelectionTabView" source="../TabView/SelectionTabView.fxml" />
+               </content>
+          </Tab>
+            <Tab text="View Image">
+               <content>
+                  <fx:include fx:id="ImageTabView" source="../TabView/ImageTabView.fxml" />
+               </content>
+            </Tab>
+            <Tab text="Image History">
+               <content>
+                  <fx:include fx:id="ImageHistoryTabView" source="../TabView/ImageHistoryTabView.fxml" />
+               </content>
+            </Tab>
+            <Tab text="All history">
+               <content>
+                  <fx:include fx:id="HistoryTabView" source="../TabView/HistoryTabView.fxml" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
