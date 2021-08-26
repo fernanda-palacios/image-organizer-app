@@ -12,6 +12,3 @@
 ### Running the Application
 - Locate jar file: `cd classes/artifacts/ProjectPhase2_jar`
 - Execute jar file: `java -jar  ProjectPhase2.jar`
-
-<br/> 
-<img src="umls/uml_diagram.png" width="600" height="900"/>

@@ -24,11 +24,11 @@ public class Main extends Application {
 
 		ModelManager.instance.setAccesor(new FileAccesor());
 
-		try {
-			ModelManager.instance.loadFromDisk();
-		} catch (ClassNotFoundException | IOException e) {
-			//e.printStackTrace();
-		}
+		// try {
+		// 	ModelManager.instance.loadFromDisk();
+		// } catch (ClassNotFoundException | IOException e) {
+		// 	//e.printStackTrace();
+		// }
 
 		// Add a shutdownhook to save ModelManager's state and the log
 		Thread t0 = new Thread() {
